@@ -53,7 +53,6 @@
 					<section>
 						<img class="logo-tesseract" data-src="../assets/images/png/logo-tesseract-completo-branco.png" width="600px" height="337px"/>
 					</section>
-
 				<!-- Apresentação Autor -->
 					<section>
 						<h1><span class="titulo-secao-1">Quem sou eu</span><span>?</span></h1>
@@ -72,7 +71,6 @@
 							</ul>
 						</p>
 					</section>
-
 				<!-- Capítulo 0: Introdução -->
 					<section>
 						<h4>
@@ -80,7 +78,6 @@
 							<span class="titulo-secao-0">vamos falar sobre <span class="controle-de-versao">Controle de Versão</span></span>
 						</h4>
 					</section>
-
 				<!-- Capítulo 1: Controle de Versão-->
 					<section>
 						<h4><span class="titulo-secao-1"><span class="controle-de-versao">1.</span> Controle de versão</span></h4>
@@ -92,7 +89,6 @@
 					<section>
 						<h5><span class="titulo-secao-0">Tá mas e o exemplo visual...</span></h5>
 					</section>
-
 				<!-- Capítulo 2: GIT-->
 					<section>
 						<h4><span class="titulo-secao-1"><span class="controle-de-versao">2.</span> E esse GIT, que tem ele nessa história?</span></h4>
@@ -115,7 +111,6 @@
 					<section data-background-image="../assets/images/png/linus-torvalds-linux.png">
 						<p class="texto-com-sombra">O <span class="controle-de-versao">GIT</span> foi projetado e desenvolvido pelo mesmo criador do <span class="controle-de-versao">Linux</span>, o sr. <span class="controle-de-versao">Linus Torvalds</span>.</p>
 					</section>
-
 				<!-- Capítulo 3: Vamos começar então um projeto versionado? -->
 					<section>
 						<h4>
@@ -216,7 +211,7 @@
 								Uma mensagem de retorno deve mostrar que seu arquivo foi enviado ao seu repositório com sucesso!
 							</p>
 							<p class="linux-terminal">
-								[master 1d922c1] Meu primeiro commit.
+								[master 1d922c1] Meu primeiro commit com o arquivo novo.
  									1 file changed, 0 insertions(+), 0 deletions(-)
  									create mode 100644 meu-arquivo.txt
 							</p>
@@ -224,10 +219,34 @@
 					<section>
 						<h5><span class="titulo-secao-0">Pronto! Seu arquivo foi enviado com sucesso para o repositório da sua máquina, ou seja, seu computador já sabe que este novo arquivo também faz parte da 'árvore de arquivos' do projeto.</h5>
 					</section>
-				<!-- Capítulo 4: Workflow Básico-->
+					<section>
+						<h5><span class="titulo-secao-0">Vamos gerar um conflito de versões então?</span></h5>
+					</section>
+					<section>
+						<p>Abra o arquivo de texto criado na pasta Meu-Projeto e altere a mensagem dentro dele, vamos colocar algo do tipo: <span class="controle-de-versao">'Olá <strike>i</strike>Mundo! Segundas-feiras são tão ~legais~!</span> Salve o arquivo .txt novamente.</p>
+					</section>
+					<section>
+							<p>Volte ao terminal e digite:
+							<p class="linux-terminal"><span class="terminal-dollar">$</span> <span class="controle-de-versao">git</span> commit -m "Meu primeiro commit!"</p>
+							<p>
+								Uma mensagem de retorno deve mostrar que seu arquivo foi enviado ao seu repositório com sucesso!
+							</p>
+							<p class="linux-terminal">
+								[master 1d922c1] Meu primeiro commit com o arquivo novo.
+ 									1 file changed, 0 insertions(+), 0 deletions(-)
+ 									create mode 100644 meu-arquivo.txt
+							</p>
+					</section>
+				<!-- Capítulo 4: Vamos falar sobre o GitHub -->
 					<section>
 						<h4>
-							<span class="titulo-secao-1"><span class="controle-de-versao">4.</span><span><em>O Workflow</em> básico</span>
+							<span class="titulo-secao-1"><span class="controle-de-versao">4.</span><span>E o que é esse tal de <span class="controle-de-versao">GitHub</span>?</span>
+						</h4>
+					</section>
+				<!-- Capítulo 5: Workflow Básico-->
+					<section>
+						<h4>
+							<span class="titulo-secao-1"><span class="controle-de-versao">5.</span><span><em>O Workflow</em> básico</span>
 						</h4>
 					</section>
 					<section>
