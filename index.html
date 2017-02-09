@@ -6,6 +6,7 @@
 
 		<title>Tesseract - Aula GIT</title>
 
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 		<link rel="stylesheet" href="css/tesseract.css">
@@ -55,7 +56,7 @@
 
 				<!-- Apresentação Autor -->
 					<section>
-						<h1><span class="titulo-secao-1">Mas quem sou eu</span><span>?</span></h1>
+						<h1><span class="titulo-secao-1">Quem sou eu</span><span>?</span></h1>
 					</section>
 					<section>
 						<p>
@@ -85,11 +86,11 @@
 						<h4><span class="titulo-secao-1"><span class="controle-de-versao">1.</span> Controle de versão</span></h4>
 					</section>
 					<section>
-						<h5><span class="titulo-secao-0">O que é esse tal Controle de Versão?</span></h5>
-						<p>O <span class="controle-de-versao">controle de versão</span> é um sistema que registra as mudanças feitas em um <span class="controle-de-versao">arquivo</span> ou um <span class="controle-de-versao">conjunto de arquivos</span> ao longo do tempo de forma que você possa recuperar versões específicas.</p>
+						<h5><span class="titulo-secao-0">O que é esse tal <span class="controle-de-versao">Controle de Versão</span>?</span></h5>
+						<p>O controle de versão é um sistema que registra as mudanças feitas em um <span class="controle-de-versao">arquivo</span> ou um <span class="controle-de-versao">conjunto de arquivos</span> ao <span class="controle-de-versao">longo do tempo</span> de forma que você possa recuperar versões específicas.</p>
 					</section>
 					<section>
-						<h5><span class="titulo-secao-0">Tá mas e o exemplo visual cara...</span></h5>
+						<h5><span class="titulo-secao-0">Tá mas e o exemplo visual...</span></h5>
 					</section>
 
 				<!-- Capítulo 2: GIT-->
@@ -122,12 +123,107 @@
 						</h4>
 					</section>
 					<section>
-						<h5><span class="titulo-secao-0">Vamos a instalação e comandos básicos...</span></h5>
+						<h5><span class="titulo-secao-0">Vamos a instalação...</span></h5>
 					</section>
 					<section>
-						<p>No terminal do Linux (Debian/Ubuntu):</p>
+						<p>No terminal do Linux (Debian/Ubuntu) digite:</p>
+						<p class="linux-terminal"><span class="terminal-dollar">$</span> sudo apt-get install git</p>
 					</section>
-
+					<section>
+						<p>No Windows acesse estes links em seu navegador e baixe:</p>
+						<p class="windows-terminal">Versão 32 bits -> http://bit.ly/<span class="terminal-emphasis">2k5wbw5</span></p>
+						<p class="windows-terminal">Versão 64 bits -> http://bit.ly/<span class="terminal-emphasis">2ku0v79</span></p>
+					</section>
+					<section>
+						<h5><span class="titulo-secao-0">Agora vamos começar com os comandos básicos...</span></h5>
+					</section>
+					<section>
+						<p>Crie uma pasta em qualquer lugar de sua máquina para iniciar seu projeto:</p>
+						<p class="linux-terminal">
+							<i class="fa fa-2x fa-folder folder-color"></i>
+								<br>
+							Meu-Projeto		
+						</p>
+					</section>
+					<section>
+						<p class="linux-terminal">No <i class="fa fa-linux cor-linux"></i>: abra o terminal clicando no símbolo do Ubuntu e digitando 'terminal'</p>
+						<br>
+						<p class="windows-terminal">No <i class="fa fa-windows cor-windows"></i>: clique no botão 'Iniciar' e procure pelo programa GIT na barra de programas do Windows, execute-o, um terminal será aberto também.</p>					
+					</section>
+					<section>
+						<p>Pelo terminal de ambos, navegue até sua pasta:</p>
+						<p class="linux-terminal"><span class="terminal-dollar">$</span> cd ../caminho-do-projeto/Meu-Projeto</p>
+						<p>Certifique-se que chegou a pasta corretamente.</p>
+					</section>
+					<!-- GIT INIT -->
+					<section>
+						<p>Pelo terminal, já dentro da pasta, digite:</p>
+						<p class="linux-terminal"><span class="terminal-dollar">$</span> <span class="controle-de-versao">git</span> init</p>
+						<p>
+							Uma mensagem de retorno deve mostrar o sucesso na criação do seu repositório GIT:
+						</p>
+						<p class="linux-terminal">
+							Initialized empty Git repository in /caminho-do-projeto/Meu-Projeto/.git/
+						</p>
+					</section>
+					<section>
+						<h5><span class="titulo-secao-0">Pronto! Você acaba de criar um <span class="controle-de-versao">repositório GIT</span> e<br> já pode começar a versionar seu código!</span></h5>
+					</section>
+					<section>
+						<h5><span class="titulo-secao-0">Vamos agora adicionar um arquivo ao nosso <span class="controle-de-versao">repositório</span> pra entender o versionamento na prática.</h5>
+					</section>
+					<section>
+						<p>Crie um arquivo qualquer dentro da sua pasta do projeto, pode ser um .txt mesmo:</p>
+						<p class="linux-terminal">
+							<i class="fa fa-2x fa-folder folder-color"></i> / <i class="fa fa-file-text notepad-color"></i> 
+								<br>
+							Meu-Projeto	/ meu-arquivo.txt	
+						</p>
+						<p>Abra o arquivo de texto em um editor qualquer e escreva uma mensagem dentro, pode ser o famigerado: <span class="controle-de-versao">'Olá <strike>i</strike>Mundo!</span> Salve o arquivo .txt.</p>
+					</section>
+					<!-- GIT STATUS -->
+					<section>
+							<p>Com o arquivo alterado e salvo, volte ao terminal e, de dentro de seu projeto, digite:
+							<p class="linux-terminal"><span class="terminal-dollar">$</span> <span class="controle-de-versao">git</span> status</p>
+							<p>
+								Uma mensagem de retorno deve mostrar que o novo arquivo foi detectado.
+							</p>
+							<p class="linux-terminal">
+								Arquivos não monitorados:<br>
+									<span class="terminal-error">new file:   meu-arquivo.txt</span>
+							</p>
+					</section>
+					<section>
+						<h5><span class="titulo-secao-0">Agora seu repositório sabe que existe um arquivo novo e diferente do estado anterior. Vamos adicionar esse novo arquivo oficialmente ao repositório.</h5>
+					</section>
+					<!-- GIT ADD -->
+					<section>
+							<p>Volte ao terminal e, de dentro de seu projeto, digite:
+							<p class="linux-terminal"><span class="terminal-dollar">$</span> <span class="controle-de-versao">git</span> add meu-arquivo.txt</p>
+							<p>
+								Uma mensagem de retorno deve mostrar que seu arquivo foi adicionado a pilha de arquivos a serem enviados.
+							</p>
+							<p class="linux-terminal">
+								Mudanças a serem submetidas:<br>
+									<span class="terminal-dollar">new file:   meu-arquivo.txt</span>
+							</p>
+					</section>
+					<!-- GIT COMMIT -->
+					<section>
+							<p>Volte ao terminal e digite:
+							<p class="linux-terminal"><span class="terminal-dollar">$</span> <span class="controle-de-versao">git</span> commit -m "Meu primeiro commit!"</p>
+							<p>
+								Uma mensagem de retorno deve mostrar que seu arquivo foi enviado ao seu repositório com sucesso!
+							</p>
+							<p class="linux-terminal">
+								[master 1d922c1] Meu primeiro commit.
+ 									1 file changed, 0 insertions(+), 0 deletions(-)
+ 									create mode 100644 meu-arquivo.txt
+							</p>
+					</section>
+					<section>
+						<h5><span class="titulo-secao-0">Pronto! Seu arquivo foi enviado com sucesso para o repositório LOCAL, ou seja, seu computador já sabe que este novo arquivo faz parte comum da 'árvore de arquivos' do projeto.</h5>
+					</section>
 				<!-- Capítulo 4: Workflow Básico-->
 					<section>
 						<h4>
@@ -150,7 +246,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				// Display controls in the bottom right corner
-			    controls: true,
+			    controls: false,
 
 			    // Display a presentation progress bar
 			    progress: true,

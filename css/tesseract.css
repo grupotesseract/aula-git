@@ -81,4 +81,30 @@ p, span {
 .texto-com-sombra {
   text-shadow: -2px 3px 1px black !important; }
 
+.linux-terminal {
+  background-color: #000 !important;
+  padding: 2% 5% !important; }
+  .linux-terminal .terminal-dollar {
+    color: #00FF00; }
+  .linux-terminal .terminal-error {
+    color: #FF0000; }
+
+.windows-terminal {
+  background-color: #000 !important;
+  padding: 2% 5% !important; }
+  .windows-terminal .terminal-emphasis {
+    color: #0000FF; }
+
+.folder-color {
+  color: #F2FE98; }
+
+.notepad-color {
+  color: #7CD7CE; }
+
+.cor-windows {
+  color: #0178D6; }
+
+.cor-linux {
+  color: #DD4814; }
+
 /*# sourceMappingURL=tesseract.css.map */
