@@ -284,6 +284,44 @@
 						</p>
 					</section>
 
+
+				<!-- Capítulo 6: Git Hooks 101 -->
+					<section>
+						<h4>
+              <span class="titulo-secao-1"><span class="controle-de-versao">6.</span><span><em>Git Hooks</em> - wtf?</span>
+						</h4>
+					</section>
+					<section>
+							<p>Git hooks são scripts que rodam automaticamente cada vez que você realiza alguma ação em particular no repositório Git.
+							<p> Casos comuns do uso de Git Hooks são encorajar alguma política de commit, alterar algo do ambiente dependendo do estado do repositório ou implementar algum workflow de Integração Contínua.
+							</p>
+					</section>
+
+          <section>
+              <span class="titulo-secao-1">Como funciona? </em></span>
+
+              <p> Todo repositório Git ao ser criado, gera um pasta .git, que, em geral, é oculta pelos sistemas operacionais. Dentro dessa pasta que é feita toda a mágica de versionamento, logs, separação de branches e etc.
+              </p>
+          </section>
+
+          <section>
+						<p>Vamos modificar a menasgem de commit atual apenas para ilustrar o funcionamento.</p>
+						<p class="linux-terminal"><span class="terminal-dollar">$</span> ls -la .git/hooks</p>
+          </section>
+
+          <section>
+						<p>Renomeie o arquivo .git/hooks/commit-msg.sample removendo o '.sample'</p>
+						<p class="linux-terminal"><span class="terminal-dollar">$</span> mv .git/hooks/commit-msg.sample ./git/hooks/commit-msg</p>
+
+						<p>Agora vamos adicionar uma mensagem custom para o commit</p>
+            <p class="linux-terminal"><span class="terminal-dollar">$</span> echo " E esse commit aí?? " >> .git/hooks/commit-msg</p>
+
+          </section>
+
+
+
+
+
 			</div>
 		</div>
 
