@@ -297,6 +297,8 @@
 						<section>
 							<h5><span class="titulo-secao-0">Agora abra seu arquivo dentro da pasta Meu-Projeto com qualquer editor de texto e vamos ver a mágica acontecer...</h5>
 						</section>
+						<section data-background-image="../assets/images/gif/gif-magic.gif">
+						</section>
 						<section>
 							<p>Veja o que magicamente está escrito dentro dele:</p>
 							<p class="linux-terminal">
@@ -344,12 +346,80 @@
 							<img class="img-flow-basico" src="../assets/images/png/git-flow-2.png" width="800px" height="495px"/>
 						</p>
 					</section>
+				<!-- Capítulo 7: Git Hooks 101 -->
+					<section>
+						<h4>
+              				<span class="titulo-secao-1"><span class="controle-de-versao">7.</span><span><em>Git Hooks</em> - wtf?</span>
+						</h4>
+					</section>
+					<section>
+						<p>
+							<em>Git hooks</em> são <em>scripts</em> que rodam automaticamente cada vez que você realiza alguma ação em particular no repositório Git.
+						</p>
+						<p>
+							Casos comuns do uso de Git Hooks são encorajar alguma política de <em>commit</em>, alterar algo do ambiente dependendo do estado do repositório ou implementar algum <em>workflow</em> de Integração Contínua.
+						</p>
+					</section>
+					<section>
+						<h5><span class="titulo-secao-0">Mas ~comofas~? Dá um exemplo ~daora~!</span></h5>
+						<p>
+							Imagine um servidor configurado para que toda vez que um código novo suba ao repositório, ele automaticamente pegue as novas alterações. Imagina que L0k0!
+						</p>
+					</section>
+					<section>
+						  <h5><span class="titulo-secao-0">Tá, mas como isso funciona?</span></h5>
+						  <p> Todo repositório Git ao ser criado, gera um pasta .git, que, em geral, é oculta pelos sistemas operacionais. Dentro dessa pasta que é feita toda a mágica de versionamento, logs, separação de branches e etc.
+						  </p>
+					</section>
+          			<section>
+						<p>Vamos modificar a mensagem de <em>commit</em> atual apenas para ilustrar o funcionamento.</p>
+						<p class="linux-terminal"><span class="terminal-dollar">$</span> ls -la .git/hooks</p>
+          			</section>
+         			 <section>
+						<p>Renomeie o arquivo .git/hooks/commit-msg.sample removendo o '.sample'</p>
+						<p class="linux-terminal"><span class="terminal-dollar">$</span> mv .git/hooks/commit-msg.sample ./git/hooks/commit-msg</p>
+
+						<p>Agora vamos adicionar uma mensagem customizada para cada <em>commit</em> novo:</p>
+           				<p class="linux-terminal"><span class="terminal-dollar">$</span> echo "E esse commit aí?" >> .git/hooks/commit-msg</p>
+          			</section>
+				<!-- Agradecimentos -->
+				<section data-background-image="../assets/images/gif/gif-party-hard.gif">
+					<h4>
+          				<span class="titulo-secao-1 texto-com-sombra">Agora que você já sabe o básico de GIT, é hora de programar em modo <span class="controle-de-versao">#PARTYHARD</span></span>
+          				<br><br>
+          				<span class="texto-com-sombra">Obrigado!</span>
+					</h4>
+				</section>
 				<!-- Refererências Finais-->
 					<section>
 						<h4>
 							<span class="titulo-secao-1">Referências bacaníssimas para começar:</span>
 						</h4>
-						<p>https://tableless.com.br/alguns-comandos-git/</p>
+						<p>
+							<a href="https://tableless.com.br/alguns-comandos-git/" target="_blank">
+								Comandos iniciais do Git
+							</a>
+						</p>
+						<p>
+							<a href="https://tableless.com.br/iniciando-no-git-parte-1/">
+								Iniciando no GIT – Parte 1
+							</a>
+						</p>
+						<p>
+							<a href="https://tableless.com.br/iniciando-no-git-parte-2/">
+								Iniciando no GIT – Parte 2
+							</a>
+						</p>
+						<p>
+							<a href="https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html">
+								Cheatsheet do git-flow
+							</a>
+						</p>
+						<p>
+							<a href="https://willianjusten.com.br/trabalhando-com-git-hooks-de-forma-facil/">
+								Trabalhando com Git Hooks de forma fácil
+							</a>
+						</p>
 					</section>
 			</div>
 		</div>
