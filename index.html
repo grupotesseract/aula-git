@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Tesseract - Aula GIT</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/tesseract.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+			<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Favicon e relacionados -->
+	        <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="../assets/favicon/apple-touch-icon-57x57">
+	        <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../assets/favicon/apple-touch-icon-60x60">
+	        <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="../assets/favicon/apple-touch-icon-72x72">
+	        <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../assets/favicon/apple-touch-icon-76x76">
+	        <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="../assets/favicon/apple-touch-icon-114x114.png">
+	        <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../assets/favicon/apple-touch-icon-120x120.png">
+	        <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="../assets/favicon/apple-touch-icon-144x144.png">
+	        <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="../assets/favicon/apple-touch-icon-152x152.png">
+	        <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../assets/favicon/apple-touch-icon-180x180.png">
+	        <link rel="apple-touch-icon" type="image/png" href="../assets/favicon/apple-touch-icon.png">
+	        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+	        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+	        <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/android-chrome-192x192.png">
+	        <link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon/android-chrome-512x512.png">
+	        <link rel="manifest" href="../assets/favicon/manifest.json">
+	        <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#878787">
+	        <meta name="msapplication-TileColor" content="#FFFFFF">
+	        <meta name="msapplication-TileImage" content="../assets/favicon/mstile-144x144.png">
+	        <meta name="msapplication-TileImage" content="../assets/favicon/mstile-150x150.png">
+	        <meta name="theme-color" content="#000000">
+
+		<!-- Printing and PDF exports -->
+			<script>
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- Logo Tesseract -->
+					<section>
+						<img class="logo-tesseract" data-src="../assets/images/png/logo-tesseract-completo-branco.png" width="600px" height="337px"/>
+					</section>
+
+				<!-- Apresentação Autor -->
+					<section>
+						<h1><span class="titulo-secao-1">Mas quem sou eu</span><span>?</span></h1>
+					</section>
+					<section>
+						<p>
+							<img data-src="../assets/images/png/avatar-renato-gomes.png" width="250px" height="250px"/>
+						</p>
+						<h3 class="titulo-secao-1">Renato Gomes</h3>
+						<h6 class="titulo-secao-2">Grupo Tesseract</h6>
+						<p>
+							<ul>
+								<li><span>Dobrador de código | <em>CodeKrafter Backend</em></span></li>
+								<li><span>Desenvolvedor Multiplataforma</span></li>
+								<li><span>Aprendiz de Laravel e novas tecnologias</span></li>
+							</ul>
+						</p>
+					</section>
+
+				<!-- Capítulo 0: Introdução -->
+					<section>
+						<h4>
+							<span class="titulo-secao-0">Primeiramente <strike class="fora-temer">Fora Temer</strike>,</span>
+							<span class="titulo-secao-0">vamos falar sobre <span class="controle-de-versao">Controle de Versão</span></span>
+						</h4>
+					</section>
+
+				<!-- Capítulo 1: Controle de Versão-->
+					<section>
+						<h4><span class="titulo-secao-1"><span class="controle-de-versao">1.</span> Controle de versão</span></h4>
+					</section>
+					<section>
+						<h5><span class="titulo-secao-0">O que é esse tal Controle de Versão?</span></h5>
+						<p>O <span class="controle-de-versao">controle de versão</span> é um sistema que registra as mudanças feitas em um <span class="controle-de-versao">arquivo</span> ou um <span class="controle-de-versao">conjunto de arquivos</span> ao longo do tempo de forma que você possa recuperar versões específicas.</p>
+					</section>
+					<section>
+						<h5><span class="titulo-secao-0">Tá mas e o exemplo visual cara...</span></h5>
+					</section>
+
+				<!-- Capítulo 2: GIT-->
+					<section>
+						<h4><span class="titulo-secao-1"><span class="controle-de-versao">2.</span> E esse GIT, que tem ele nessa história?</span></h4>
+					</section>
+					<section>
+						<p>
+							<img class="logo-git" src="../assets/images/png/logo-git.png" width="150px" height="150px"/>
+						</p>
+						<p><span class="controle-de-versao">GIT</span> é um <span class="controle-de-versao">sistema</span> de controle de versão de arquivos. Através dele podemos desenvolver projetos na qual diversas pessoas podem <span class="controle-de-versao">contribuir simultaneamente</span> no mesmo, editando e criando novos arquivos e permitindo que os mesmos possam existir <span class="controle-de-versao">sem o risco de suas alterações serem sobrescritas</span>.</p>
+					</section>
+					<section>
+						<h5><span class="titulo-secao-0">Em outras palavras...</span></h5>
+					</section>
+					<section>
+						<p>O <span class="controle-de-versao">GIT</span> é a <span class="controle-de-versao">ferramenta</span> que vai te auxiliar a criar um ambiente colaborativo sem <strike>cagar</strike> causar danos no código de outro desenvolvedor ou criar 420 versões de um mesmo código - no DropBox daquele seu trabalho de Algoritmos em grupo - por exemplo.</p>
+					</section>
+					<section>
+						<h5><span class="titulo-secao-0">Só uma trivia...</span></h5>
+					</section>
+					<section data-background-image="../assets/images/png/linus-torvalds-linux.png">
+						<p class="texto-com-sombra">O <span class="controle-de-versao">GIT</span> foi projetado e desenvolvido pelo mesmo criador do <span class="controle-de-versao">Linux</span>, o sr. <span class="controle-de-versao">Linus Torvalds</span>.</p>
+					</section>
+
+				<!-- Capítulo 3: Vamos começar então um projeto versionado? -->
+					<section>
+						<h4>
+							<span class="titulo-secao-1"><span class="controle-de-versao">3.</span><span>Vamos começar então um projeto com <span class="controle-de-versao">controle de versão</span>?</span>
+						</h4>
+					</section>
+					<section>
+						<h5><span class="titulo-secao-0">Vamos a instalação e comandos básicos...</span></h5>
+					</section>
+					<section>
+						<p>No terminal do Linux (Debian/Ubuntu):</p>
+					</section>
+
+				<!-- Capítulo 4: Workflow Básico-->
+					<section>
+						<h4>
+							<span class="titulo-secao-1"><span class="controle-de-versao">4.</span><span><em>O Workflow</em> básico</span>
+						</h4>
+					</section>
+					<section>
+						<p>
+							<img class="img-flow-basico" src="../assets/images/png/git-flow-2.png" width="800px" height="495px"/>
+						</p>
+					</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+			    controls: true,
+
+			    // Display a presentation progress bar
+			    progress: true,
+
+			    // Display the page number of the current slide
+			    slideNumber: false,
+
+			    // Push each slide change to the browser history
+			    history: false,
+
+			    // Enable keyboard shortcuts for navigation
+			    keyboard: true,
+
+			    // Enable the slide overview mode
+			    overview: true,
+
+			    // Vertical centering of slides
+			    center: true,
+
+			    // Enables touch navigation on devices with touch input
+			    touch: true,
+
+			    // Loop the presentation
+			    loop: false,
+
+			    // Change the presentation direction to be RTL
+			    rtl: false,
+
+			    // Randomizes the order of slides each time the presentation loads
+			    shuffle: false,
+
+			    // Turns fragments on and off globally
+			    fragments: true,
+
+			    // Flags if the presentation is running in an embedded mode,
+			    // i.e. contained within a limited portion of the screen
+			    embedded: false,
+
+			    // Flags if we should show a help overlay when the questionmark
+			    // key is pressed
+			    help: true,
+
+			    // Flags if speaker notes should be visible to all viewers
+			    showNotes: false,
+
+			    // Number of milliseconds between automatically proceeding to the
+			    // next slide, disabled when set to 0, this value can be overwritten
+			    // by using a data-autoslide attribute on your slides
+			    autoSlide: 0,
+
+			    // Stop auto-sliding after user input
+			    autoSlideStoppable: true,
+
+			    // Use this method for navigation when auto-sliding
+			    autoSlideMethod: Reveal.navigateNext,
+
+			    // Enable slide navigation via mouse wheel
+			    mouseWheel: true,
+
+			    // Hides the address bar on mobile devices
+			    hideAddressBar: true,
+
+			    // Opens links in an iframe preview overlay
+			    previewLinks: false,
+
+			    // Transition style
+			    transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+			    // Transition speed
+			    transitionSpeed: 'default', // default/fast/slow
+
+			    // Transition style for full page slide backgrounds
+			    backgroundTransition: 'concave', // none/fade/slide/convex/concave/zoom
+
+			    // Number of slides away from the current that are visible
+			    viewDistance: 3,
+
+			    // Parallax background image
+			    parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+			    // Parallax background size
+			    parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+			    // Number of pixels to move the parallax background per slide
+			    // - Calculated automatically unless specified
+			    // - Set to 0 to disable movement along an axis
+			    parallaxBackgroundHorizontal: null,
+			    parallaxBackgroundVertical: null,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/*
+* Fontes
+*/
+/* EdmondSans - Regular */
+@font-face {
+  font-family: 'EdmondSans Regular';
+  src: url("../assets/fonts/edmondsans/regular/edmondsans-regular.eot");
+  src: url("../assets/fonts/edmondsans/regular/edmondsans-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/edmondsans/regular/edmondsans-regular.woff") format("woff"), url("../assets/fonts/edmondsans/regular/edmondsans-regular.ttf") format("truetype"), url("../assets/fonts/edmondsans/regular/edmondsans-regular.svg#EDMONDSANS_REGULAR") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* EdmondSans - Medium */
+@font-face {
+  font-family: 'EdmondSans Medium';
+  src: url("../assets/fonts/edmondsans/medium/edmondsans-medium.eot");
+  src: url("../assets/fonts/edmondsans/medium/edmondsans-medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/edmondsans/medium/edmondsans-medium.woff") format("woff"), url("../assets/fonts/edmondsans/medium/edmondsans-medium.ttf") format("truetype"), url("../assets/fonts/edmondsans/medium/edmondsans-medium.svg#EDMONDSANS_MEDIUM") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* EdmondSans - Bold */
+@font-face {
+  font-family: 'EdmondSans Bold';
+  src: url("../assets/fonts/edmondsans/bold/edmondsans-bold.eot");
+  src: url("../assets/fonts/edmondsans/bold/edmondsans-bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/edmondsans/bold/edmondsans-bold.woff") format("woff"), url("../assets/fonts/edmondsans/bold/edmondsans-bold.ttf") format("truetype"), url("../assets/fonts/edmondsans/bold/edmondsans-bold.svg#EDMONDSANS_BOLD") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Jaapokki - Regular */
+@font-face {
+  font-family: 'Jaapokki Regular';
+  src: url("../assets/fonts/jaapokki/regular/jaapokki-regular.eot");
+  src: url("../assets/fonts/jaapokki/regular/jaapokki-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/jaapokki/regular/jaapokki-regular.woff") format("woff"), url("../assets/fonts/jaapokki/regular/jaapokki-regular.ttf") format("truetype"), url("../assets/fonts/jaapokki/regular/jaapokki-regular.svg#JAAPOKKI_REGULAR") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Jaapokki - Enhance */
+@font-face {
+  font-family: 'Jaapokki Enhance';
+  src: url("../assets/fonts/jaapokki/enhance/jaapokki-enhance.eot");
+  src: url("../assets/fonts/jaapokki/enhance/jaapokki-enhance.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/jaapokki/enhance/jaapokki-enhance.woff") format("woff"), url("../assets/fonts/jaapokki/enhance/jaapokki-enhance.ttf") format("truetype"), url("../assets/fonts/jaapokki/enhance/jaapokki-enhance.svg#JAAPOKKI_ENHANCE") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Jaapokki - Subtract */
+@font-face {
+  font-family: 'Jaapokki Subtract';
+  src: url("../assets/fonts/jaapokki/subtract/jaapokki-subtract.eot");
+  src: url("../assets/fonts/jaapokki/subtract/jaapokki-subtract.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/jaapokki/subtract/jaapokki-subtract.woff") format("woff"), url("../assets/fonts/jaapokki/subtract/jaapokki-subtract.ttf") format("truetype"), url("../assets/fonts/jaapokki/subtract/jaapokki-subtract.svg#JAAPOKKI_SUBTRACT") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*
+* Elementos básicos
+*/
+p, span {
+  font-family: "EdmondSans Medium", serif, sans-serif !important; }
+
+.reveal .progress span {
+  background: #F54D27 !important; }
+
+/*
+* Classes
+*/
+.logo-tesseract, .logo-git, .img-flow-basico {
+  margin: 15px 0px;
+  background: none !important;
+  border: 0px !important;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.15) !important; }
+
+.titulo-secao-0 {
+  font-family: "Jaapokki Regular", serif, sans-serif !important; }
+
+.titulo-secao-1 {
+  font-family: "Jaapokki Enhance", serif, sans-serif !important; }
+
+.titulo-secao-2 {
+  font-family: "Jaapokki Subtract", serif, sans-serif !important; }
+
+.fora-temer {
+  font-size: 0.7rem !important; }
+
+.controle-de-versao {
+  font-weight: bolder;
+  color: #F54D27; }
+
+.texto-com-sombra {
+  text-shadow: -2px 3px 1px black !important; }
+
+/*# sourceMappingURL=tesseract.css.map */
